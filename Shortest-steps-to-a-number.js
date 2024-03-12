@@ -36,3 +36,12 @@ Examples:
 
 
 // Solution
+
+function shortestStepsToNum(num) {
+  let counter = 0;
+  while (num>1) {
+    num = num % 2 ? num - 1 : num / 2;
+    counter++
+  }
+  return counter;
+}
